@@ -1,0 +1,36 @@
+::ng-deep .mat-form-field {
+  margin-right: 2em;
+}
+.full-form{
+  div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 30px;
+}
+.radio-btn{
+  mat-radio-button{
+    margin: 1em 1em 1em 0;
+  }
+}
+.stat-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  border: 1px solid;
+  margin: 5px;
+  border-radius: 0px;
+  box-shadow: 1px 4px 2px 0 slategrey;
+}
+
+.stat-header {
+  color: white;
+  background-color: navy;
+  font-weight: lighter;
+}
+.history-card{
+  width: 40em;
+}
