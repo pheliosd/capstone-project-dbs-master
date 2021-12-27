@@ -55,3 +55,11 @@
 
 
 
+## Issues 
+
+1. Initial commit  --> Complete code with the combination of Frontend and Backend
+
+2. Update in Mariadbsql   --> update of sql commandss and structure 
+
+3. Update in readme.md  --> a complete structure of Readme
+ 
