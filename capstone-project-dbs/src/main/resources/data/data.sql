@@ -1,3 +1,46 @@
+create table  custodian(
+    custodian_id varchar(255),
+     custodian_name varchar(255) );
+
+create table order_book
+(order_id varchar(255) ,
+ limit_order bit(1) ,
+ order_direction varchar(255),
+ order_status varchar(255),
+ price double , quantity int ,
+ time_stamp datetime,
+ client_id varchar(255),
+ instrument_id varchar(255));
+
+create table instrument
+(instrument_id varchar(255),
+ expiry_date datetime,
+ face_value double,
+ instrument_name varchar(255),
+ min_quantity int);
+
+create table stocks
+(
+    stock_id varchar(255),
+    quantity int,
+    client_id varchar(255),
+    instrument_id varchar(255)
+);
+
+create table client
+(
+    client_id varchar(255),
+    client_name varchar(255),
+    transaction_limit double,
+    custodian_id varchar(255)
+);
+
+alter table  instrument ADD  primary key (instrument_id);
+
+alter  table  stocks ADD primary key (stock_id);
+
+alter table  order_book add primary key (order_id);
+
 INSERT into INSTRUMENT VALUES
                            ('I001',NULL,100,'US treasury Bills',25),
                            ('I002',NULL,1000,'RBI-2026 -6.5%',25),
